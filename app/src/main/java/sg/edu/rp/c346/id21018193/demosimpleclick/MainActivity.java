@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     // Write the code when female selected
-                    rgGender.check(rbtn2);
+                    rgGender.check(int rbtn2);
                     txt = " She says" + et.getText().toString();
                 }
                 tv.setText(txt);
