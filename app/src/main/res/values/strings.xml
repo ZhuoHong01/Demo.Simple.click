@@ -2,7 +2,5 @@
     <string name="app_name">Demo Simple click</string>
     <string name="Show">Displays what the user enters</string>
     <string name="display">Display</string>
-    <string name="string_display" />
-    <string name="string_string_display" />
     <string name="enter">Enter Something</string>
 </resources>
