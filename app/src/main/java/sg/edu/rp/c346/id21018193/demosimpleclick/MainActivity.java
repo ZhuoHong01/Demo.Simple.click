@@ -36,6 +36,24 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Handle button click event here
                 String txt = et.getText().toString();
+                tv.setText(txt);
+
+                Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        tbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        rgGender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String txt = et.getText().toString();
                 int checkedRadioId = rgGender.getCheckedRadioButtonId();
                 if(checkedRadioId == R.id.rbtn){
                     // Write the code when male selected
@@ -46,13 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 tv.setText(txt);
-
-                Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
-
             }
         });
-
-
 
     }
 
