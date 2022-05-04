@@ -37,7 +37,7 @@ android:orientation="vertical">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="hint"
-            android:text="Display what the user eneters"/>
+            android:text="Display what the user enter"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 </LinearLayout>
