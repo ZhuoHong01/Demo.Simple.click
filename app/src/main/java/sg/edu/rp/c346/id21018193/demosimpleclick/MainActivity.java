@@ -62,11 +62,11 @@ public class MainActivity extends AppCompatActivity {
                 int checkedRadioId = rgGender.getCheckedRadioButtonId();
                 if(checkedRadioId == R.id.rbtn){
                     // Write the code when male selected
-
+                    rgGender.check(rbtn);
                 }
                 else{
                     // Write the code when female selected
-
+                    rgGender.check(rbtn2);
                 }
                 tv.setText(txt);
             }
