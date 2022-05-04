@@ -38,9 +38,10 @@ android:orientation="vertical">
         android:text="@string/Show" />
 
     <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_height="wrap_content"
+        android:id="@+id/tbtn"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
         android:textOff="Disabled"
         android:textOn="Enabled" />
 

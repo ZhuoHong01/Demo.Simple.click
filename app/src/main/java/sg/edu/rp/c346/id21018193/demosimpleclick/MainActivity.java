@@ -7,13 +7,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
     EditText et;
     TextView tv;
-
+    ToggleButton tbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.btn1);
         et = findViewById(R.id.txt1);
         tv = findViewById(R.id.txtvw1);
+        tbtn = findViewById(R.id.tbtn);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
