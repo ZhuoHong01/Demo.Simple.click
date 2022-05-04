@@ -5,13 +5,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
     EditText et;
-
+    TextView tv;
 
 
     @Override
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.btn1);
         et = findViewById(R.id.txt1);
+        tv = findViewById(R.id.txtvw1);
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Handle button click event here
                 String txt = et.getText().toString();
+                tv.setText(txt);
                 Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
 
             }
