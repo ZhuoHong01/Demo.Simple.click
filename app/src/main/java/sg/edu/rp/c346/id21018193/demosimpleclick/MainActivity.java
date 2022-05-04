@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Handle button click event here
                 String txt = et.getText().toString();
-                Toast.makeText(MainActivity.this, "The Button has been clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, txt, Toast.LENGTH_SHORT).show();
 
             }
         });
