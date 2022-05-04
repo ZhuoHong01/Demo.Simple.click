@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     Button btn;
     EditText et;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn = findViewById(R.id.btn1);
         et = findViewById(R.id.txt1);
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
