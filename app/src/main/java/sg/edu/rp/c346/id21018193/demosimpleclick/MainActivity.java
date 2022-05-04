@@ -58,15 +58,17 @@ public class MainActivity extends AppCompatActivity {
         rgGender.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String txt = et.getText().toString();
+                String txt = "";
                 int checkedRadioId = rgGender.getCheckedRadioButtonId();
                 if(checkedRadioId == R.id.rbtn){
                     // Write the code when male selected
-                    rgGender.check(rbtn);
+                    rgGender.check(int rbtn);
+                    txt = " He says" + et.getText().toString();
                 }
                 else{
                     // Write the code when female selected
                     rgGender.check(rbtn2);
+                    txt = " She says" + et.getText().toString();
                 }
                 tv.setText(txt);
             }
