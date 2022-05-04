@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
         tbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(tbtn.isChecked()){
-                    boolean isChecked;
+                if(tbtn.isChecked() == true){
+                    et.getText() == true;
                 }
                 else{
-                    void setChecked = boolean checked;
+                    et.getText() == false;
                 }
             }
         });
