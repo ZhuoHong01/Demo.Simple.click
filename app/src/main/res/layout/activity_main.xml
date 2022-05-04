@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical">
 
@@ -14,7 +15,8 @@ android:orientation="vertical">
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Display" />
+            android:text="@string/string_string_display"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txt1"
@@ -25,7 +27,7 @@ android:orientation="vertical">
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="Enter Something" />
+            android:text="@string/enter" />
 
     </LinearLayout>
 
@@ -33,7 +35,7 @@ android:orientation="vertical">
         android:id="@+id/txtvw1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Displays what the user enters" />
+        android:text="@string/Show" />
 
 </LinearLayout>
 
