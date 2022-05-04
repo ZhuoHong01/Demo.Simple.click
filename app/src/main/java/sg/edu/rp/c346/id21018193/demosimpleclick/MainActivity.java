@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
-    EditText txt;
+    EditText et;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn = findViewById(R.id.btn1);
-        txt = findViewById(R.id.txt1);
+        et = findViewById(R.id.txt1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Handle button click event here
-                String txt = txt1.getText().toString();
+                String txt = et.getText().toString();
                 Toast.makeText(MainActivity.this, "The Button has been clicked", Toast.LENGTH_SHORT).show();
 
             }
