@@ -37,5 +37,12 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:text="@string/Show" />
 
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textOff="Disabled"
+        android:textOn="Enabled" />
+
 </LinearLayout>
 
